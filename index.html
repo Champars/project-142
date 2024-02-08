@@ -1,0 +1,53 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ping Pong</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Black+And+White+Picture&family=Dancing+Script&family=MedievalSharp&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <center>
+        <div class="btn btn-primary heading">
+            <h1>AI Ping Pong</h1>
+            <button data-target="#m" data-toggle="modal">Instructions</button>
+        </div>
+        <button onclick="startgame()" class="btn btn-danger">Play Game</button><br><br>
+        <h3 id="s" class="btn btn-warning">Status Of The Game</h3><br><br>
+        <div id="canvas"></div>
+        <h5 id="f">Credit:Aarav Shah</h5>
+        <div id="m" class="modal fade">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button data-dismiss="modal" class="close" id="b">&times;</button>
+                        <h1>How To Play AI Ping Pong</h1>
+                    </div>
+                    <div class="modal-body">
+                        <ol type="I">
+                            <li>Keep your laptop screen straight</li>
+                            <li>Move 3-4 feet away</li>
+                            <li>Move your right wrist in ascending and descending order a red dot should appear</li>
+                            <li>Now press play and move 3-4 feet away</li>
+                            <li>The red paddel is yours and will move as per the movement of your right wrist</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </center>
+    <script src="main.js"></script>
+</body>
+
+</html>
